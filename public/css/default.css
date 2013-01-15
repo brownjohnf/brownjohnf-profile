@@ -3,6 +3,9 @@
 .float-right {
   float: right;
 }
-.alert {
+hr, .alert {
   clear: both;
+}
+body {
+  padding-bottom: 50px;
 }

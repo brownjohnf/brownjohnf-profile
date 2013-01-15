@@ -12,7 +12,7 @@
         .span9
           %h1
             John F. Brown
-            %small Web Developer
+            %small Developer
       .row
         .span9
           %ul.nav.nav-tabs
@@ -22,6 +22,15 @@
               %a{:href => "/portfolio"} Portfolio
             %li
               %a{:href => "/contact"} Contact
+            %li.dropdown.pull-right
+              %a.dropdown-toggle{:href => '#', 'data-toggle' => 'dropdown'}
+                Download
+                %b.caret
+              %ul.dropdown-menu
+                %li
+                  %a{:href => '/download/pdf'} PDF
+                %li
+                  %a{:href => '/download/word'} MS Word
     &nbsp;
     .container
       .row
