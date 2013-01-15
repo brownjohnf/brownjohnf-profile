@@ -1,0 +1,19 @@
+:erb
+  <html>
+    <head>
+      <link rel="stylesheet" href="css/default.css"></link>
+      <title>John F. Brown</title>
+    </head>
+    <body>
+      <header>
+        <a href="/">Resume</a>
+        <a href="/portfolio">Portfolio</a>
+      </header>
+      &nbsp;
+      <div id="container">
+        <h1>John F. Brown<small>pdf</small></h1>
+        <hr/>
+        <%= yield %>
+      </div>
+    </body>
+  </html>
