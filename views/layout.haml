@@ -1,19 +1,81 @@
-:erb
-  <html>
-    <head>
-      <link rel="stylesheet" href="css/default.css"></link>
-      <title>John F. Brown</title>
-    </head>
-    <body>
-      <header>
-        <a href="/">Resume</a>
-        <a href="/portfolio">Portfolio</a>
-      </header>
-      &nbsp;
-      <div id="container">
-        <h1>John F. Brown<small>pdf</small></h1>
-        <hr/>
-        <%= yield %>
-      </div>
-    </body>
-  </html>
+%html
+  %head
+    %link{:rel => 'stylesheet', :href => 'css/default.css'}
+    :erb
+      <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></link>
+      <script src="http://code.jquery.com/jquery-latest.js"></script>
+      <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+    %title John F. Brown
+  %body
+    .container#header
+      .row
+        .span9
+          %h1
+            John F. Brown
+            %small Web Developer
+      .row
+        .span9
+          %ul.nav.nav-tabs
+            %li
+              %a{:href => "/"} Resume
+            %li
+              %a{:href => "/portfolio"} Portfolio
+            %li
+              %a{:href => "/contact"} Contact
+    &nbsp;
+    .container
+      .row
+        .span9
+          = yield
+        .span3
+          :erb
+            <div class="alert alert-info">
+            <h2>Specialties</h2>
+            </div>
+
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Rails</li>
+              <li>Sinatra</li>
+              <li>CodeIgniter</li>
+            </ul>
+            <h3>Infrastructure</h3>
+            <ul>
+              <li>Heroku</li>
+              <li>Amazon Web Services (esp. EC2, S3, Route 53)</li>
+              <li>Rackspace Hosting & Email services</li>
+              <li>Google Apps</li>
+            </ul>
+            <h3>Web Applications</h3>
+            <ul>
+              <li>Diaspora</li>
+              <li>WordPress</li>
+              <li>phpBB</li>
+            </ul>
+            <h3>*nix</h3>
+            <ul>
+              <li>OS X</li>
+              <li>Debian/Ubuntu/WattOS</li>
+              <li>Bash shell scripting (limited)</li>
+            </ul>
+            <h3>Languages</h3>
+            <ul>
+              <li>French (conversational)</li>
+              <li>Sereer (West-African local language, conversational)</li>
+              <li>HTML5 (advanced)</li>
+              <li>Ruby (proficient)</li>
+              <li>PHP (proficient)</li>
+              <li>CSS2 (proficient)</li>
+              <li>SQL (proficient)</li>
+              <li>JavaScript (proficient)</li>
+              <li>SASS/SCSS</li>
+              <li>HAML</li>
+            </ul>
+            <h3>Databases</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>PostgreSQL</li>
+              <li>Redis</li>
+              <li>ElasticSearch</li>
+              <li>MongoDB (limited)</li>
+            </ul>

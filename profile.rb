@@ -9,3 +9,7 @@ end
 get '/portfolio' do
   haml :portfolio
 end
+
+get '/contact' do
+  haml :contact
+end
