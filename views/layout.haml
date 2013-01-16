@@ -8,8 +8,8 @@
       <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     %title John F. Brown
   %body
-    .container-fluid#header
-      .row-fluid
+    .container#header
+      .row
         .span9
           %h1
             John F. Brown
@@ -33,8 +33,8 @@
                 %li
                   %a{:href => '/download/word'} MS Word
     &nbsp;
-    .container-fluid
-      .row-fluid
+    .container
+      .row
         .span9
           = yield
         .span3
