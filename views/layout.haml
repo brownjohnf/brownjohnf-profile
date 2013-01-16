@@ -3,17 +3,18 @@
     %link{:rel => 'stylesheet', :href => 'css/default.css'}
     :erb
       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></link>
+      <link rel="stylesheet" href="bootstrap/css/bootstrap-responsive.min.css"></link>
       <script src="http://code.jquery.com/jquery-latest.js"></script>
       <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
     %title John F. Brown
   %body
-    .container#header
-      .row
+    .container-fluid#header
+      .row-fluid
         .span9
           %h1
             John F. Brown
             %small Developer
-      .row
+      .row-fluid
         .span9
           %ul.nav.nav-tabs
             %li
@@ -32,8 +33,8 @@
                 %li
                   %a{:href => '/download/word'} MS Word
     &nbsp;
-    .container
-      .row
+    .container-fluid
+      .row-fluid
         .span9
           = yield
         .span3
