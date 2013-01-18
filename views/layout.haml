@@ -1,5 +1,7 @@
 %html
   %head
+    %meta{'http-equiv' => 'content-type', :content => 'text/html; charset=UTF-8'}
+    %meta{'http-equiv' => 'content-language', :content => 'en-US'}
     %link{:rel => 'stylesheet', :href => 'css/default.css'}
     :erb
       <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"></link>
@@ -29,7 +31,7 @@
                 %b.caret
               %ul.dropdown-menu
                 %li
-                  %a{:href => '/download/pdf'} PDF
+                  %a{:href => '/download/pdf'} PDF (recommended)
                 %li
                   %a{:href => '/download/word'} MS Word
     &nbsp;
@@ -40,7 +42,7 @@
         .span3
           :erb
             <div class="alert alert-info">
-            <h2>Specialties</h2>
+            <h2>Skills</h2>
             </div>
 
             <h3>Frameworks</h3>
